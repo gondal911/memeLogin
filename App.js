@@ -25,19 +25,20 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 
 import Login from './src/pages/login';
-import SignUp from './src/pages/signup';
+import Routem from './src/routes.js';
 
 class App extends Component {
 
  render(){
   return (
 
-<View style= {styles.container}>
-<StatusBar backgroundColor = "#1c313a"
+  <View style= {styles.container}>
+  
+    <StatusBar backgroundColor = "#1c313a"
            barStyle="light-content" 
-/>
-<SignUp/>
-
+    />
+    <Routem/>
+    
 </View>
   );}
 

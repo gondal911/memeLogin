@@ -11,7 +11,7 @@ import {
 import Logo from '../components/logo';
 import Form from '../components/form';
 
-class SignUp extends Component {
+export class SignUp extends Component {
 
     render(){
      return (
@@ -66,4 +66,4 @@ class SignUp extends Component {
         }
    });
    
-   export default SignUp;
+ 

@@ -11,7 +11,7 @@ import {
 import Logo from '../components/logo';
 import Form from '../components/form';
 
-class Login extends Component {
+export default class Login extends Component {
 
     render(){
      return (
@@ -19,7 +19,7 @@ class Login extends Component {
         <View style= {styles.container}>
   
         <Logo/>
-        <Form/>
+        <Form type="login"/>
         <View style={styles.SignUpCont}>
             <Text style={styles.SignUpText}>Dont have an account? </Text>
            <Text style={styles.SignUpButton}>SignUp</Text> 
@@ -66,4 +66,4 @@ class Login extends Component {
         }
    });
    
-   export default Login;
+   

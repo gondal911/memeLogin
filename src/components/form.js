@@ -11,8 +11,9 @@ import {
 } from 'react-native';
 
 
-class Form extends Component {
+export default class Form extends Component {
 
+   
     render(){
      return (
    
@@ -68,4 +69,3 @@ class Form extends Component {
         }
    });
    
-   export default Form;
