@@ -18,7 +18,7 @@ class Form extends Component {
    
         <View style= {styles.fcontainer}>
   
-            <TextInput style={styles.Inputbox}  placeholder="Enter name" placeholderTextColor="#D4AF37"/>
+            <TextInput style={styles.Inputbox}  placeholder="Enter my name" placeholderTextColor="#D4AF37"/>
             <TextInput style={styles.Inputbox} secureTextEntry={true}  placeholder="Enter password" placeholderTextColor="#D4AF37" />
             
             <TouchableOpacity>
