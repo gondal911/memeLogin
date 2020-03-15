@@ -24,7 +24,7 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-import Login from './src/pages/login';
+
 import Routem from './src/routes.js';
 
 class App extends Component {
@@ -46,11 +46,6 @@ class App extends Component {
   
 const styles = StyleSheet.create({
  container:{
-
-  backgroundColor: "#FAFAD2",
- //flexDirection: "column",
- alignItems:"center",
- justifyContent:"center",
  flex:1
 
  } 

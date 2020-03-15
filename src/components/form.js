@@ -19,8 +19,20 @@ export default class Form extends Component {
    
         <View style= {styles.fcontainer}>
   
-            <TextInput style={styles.Inputbox}  placeholder="Enter my name" placeholderTextColor="#D4AF37"/>
-            <TextInput style={styles.Inputbox} secureTextEntry={true}  placeholder="Enter password" placeholderTextColor="#D4AF37" />
+            <TextInput style={styles.Inputbox}  
+                placeholder="Enter your email" 
+                keyboardType="email-address" 
+                placeholderTextColor="#D4AF37"
+                onSubmitEditing={()=> this.password.focus()}
+                
+                
+                />
+            <TextInput style={styles.Inputbox}
+                secureTextEntry={true} 
+                placeholder="Enter password"
+                placeholderTextColor="#D4AF37"
+                ref={ (input) => this.password = input}
+                />
             
             <TouchableOpacity>
      <Text style={styles.buttonText}>{this.props.type}</Text>

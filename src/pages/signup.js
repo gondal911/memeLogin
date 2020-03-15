@@ -8,10 +8,17 @@ import {
   StatusBar,
   TouchableOpacity,
 } from 'react-native';
+import {Actions} from 'react-native-router-flux';
 import Logo from '../components/logo';
 import Form from '../components/form';
 
-export class SignUp extends Component {
+export default class SignUp extends Component {
+    signIn(){
+
+        Actions.login();
+
+    }
+   
 
     render(){
      return (
@@ -22,7 +29,10 @@ export class SignUp extends Component {
         <Form type="signUp"/>
         <View style={styles.SignUpCont}>
             <Text style={styles.SignUpText}>Already have an account? </Text>
-           <Text style={styles.SignUpButton}>SignIn</Text> 
+            <TouchableOpacity  onPress={this.signIn} style={styles.SignUpButtonOpacity}>
+                <Text style={styles.SignUpButton}>SignIn</Text>
+
+                </TouchableOpacity>
         </View>
         </View>
    
@@ -63,6 +73,11 @@ export class SignUp extends Component {
 
 
 
+        },
+        SignUpButtonOpacity:{
+            color:"#996515",
+            opacity:2,
+        
         }
    });
    
