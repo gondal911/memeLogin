@@ -113,7 +113,7 @@ class SignUp extends Component {
     }
 
     onSubmit = (values) => {
-
+       
         this.createNewUser(values)
 
 
@@ -191,7 +191,7 @@ class SignUp extends Component {
  })
  
  export default compose(
-    connect(null,null),
+    connect(null,mapDispatchToProps),
     reduxForm({
         form: 'register',
         validate,

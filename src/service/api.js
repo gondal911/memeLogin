@@ -1,6 +1,6 @@
 const BASE_URL = "http://192.168.100.32:8081"
 
-export const api = async (url,method,body = null,headers = {}) => {
+export const api = async (url,method,body=null,headers={} ) => {
 
  try {
     const endPoint = BASE_URL.concat(url);
@@ -37,11 +37,11 @@ export const api = async (url,method,body = null,headers = {}) => {
 
 } catch(e) {
 
-    throw new Error("API ERROR");
+    throw new Error(e);
     }
  }
 
- export const fetchApi = async (url,method, body, statusCode, token = null, loader= false, promiseReturnType="json") =>{
+ export const fetchApi = async (url,method, body, statusCode, token , loader=false ) =>{
 
     try {
         const headers = {}
@@ -59,7 +59,7 @@ export const api = async (url,method,body = null,headers = {}) => {
         throw response;
 
     } catch (error) {
-        throw error;
+        throw new Error(error);
     }
 
  } 
